@@ -1,3 +1,9 @@
+import pandas
+import json
+from zipfile import ZipFile
+from io import BytesIO
+from io import StringIO
+
 def read_file(file_name, file_content):
     if file_name[-3:] == 'csv':
         data = pandas.read_csv(BytesIO(file_content))

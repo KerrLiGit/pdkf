@@ -6,15 +6,14 @@ def readme():
 
 setup(
   name='pdkf',
-  version='1.0.0',
+  version='1.0.4',
   author='KerrLi',
   author_email='bogatyreva_aa@mail.ru',
-  description='Module for working with PBKF files and Pandas dataframes',
+  description='Module for working with PDKF files and Pandas dataframes',
   long_description=readme(),
   long_description_content_type='text/markdown',
   url='https://github.com/KerrLiGit/pdkf',
   packages=find_packages(),
-  install_requires=['requests>=2.25.1'],
   classifiers=[
     'Programming Language :: Python :: 3.11',
     'License :: OSI Approved :: MIT License',
@@ -24,5 +23,9 @@ setup(
   project_urls={
     'Documentation': 'https://github.com/KerrLiGit/pdkf/wiki'
   },
+  install_requires=[
+    'pandas>=2.1.0',
+    'zipp>=3.17.0'
+  ],
   python_requires='>=3.7'
 )
